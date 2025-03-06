@@ -469,24 +469,24 @@ gsap.to('.spacer', {
   }
 });
 
-gsap.to('#projects-heading', {
-  fontSize: '50px',
-  scrollTrigger: {
-	snap: 1,
-    trigger: ".spacer",
-    // pin: true,
-    start: "top bottom-=100",
-    end: "bottom bottom-=100",
-    scrub: true,
-	// markers: true,
-	// snap: {
-    //   snapTo: 1 / (sections.length - 1),
-    //   duration: 0.1,
-    //   delay: 0.1,
-    //   ease: "power1.inOut",
-    // },
-  }
-});
+// gsap.to('#projects-heading', {
+//   fontSize: '50px',
+//   scrollTrigger: {
+// 	snap: 1,
+//     trigger: ".spacer",
+//     // pin: true,
+//     start: "top bottom-=100",
+//     end: "bottom bottom-=100",
+//     scrub: true,
+// 	markers: true,
+// 	// snap: {
+//     //   snapTo: 1 / (sections.length - 1),
+//     //   duration: 0.1,
+//     //   delay: 0.1,
+//     //   ease: "power1.inOut",
+//     // },
+//   }
+// });
 
 window.addEventListener('reload', window.scrollTo(0, 0))
 window.history.scrollRestoration = "manual"
@@ -613,8 +613,9 @@ html, body {
 }
 
 section.spacer {
-  height: 0vh;
+  height: 2vh;
   width: 70vw;
+  opacity: 0;
   /* background-color: #926161; */
   margin: 0 auto;
   background-image: var(--backgroundUrl);
